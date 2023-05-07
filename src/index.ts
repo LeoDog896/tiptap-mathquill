@@ -1,11 +1,17 @@
-import { Extension } from '@tiptap/core'
+import { Node } from '@tiptap/core'
 
-const MyExtension = Extension.create({
-  name: 'MyExtension',
+const MathquillExtension = Node.create({
+  name: 'mathquill',
+
+  content: 'inline*',
+  group: 'inline',
+  inline: true,
+  selectable: false,
+  atom: true,
 
   // do your stuff here
 })
 
-export { MyExtension }
+export { MathquillExtension }
 
-export default MyExtension
+export default MathquillExtension
